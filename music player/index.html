@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<div class="container">
+<div class="music-player">
+<nav>
+<div class="circle">
+<i class="fa-solid fa-angle-left"></i>
+</div>
+<div class="circle">
+<i class="fa-solid fa-bars"></i>
+</div>
+</nav>
+<img class="song-img">
+<h1 class="song-name"> </h1>
+<p class="singer-name"> </p>
+<audio id="song">
+<!-- <source src="./media/esm3.com.183283.mp3" type="audio/mp3"> -->
+</audio>
+<input type="range" id="progress" value="0">
+<div class="controls">
+<div><i class="back-icon fa-solid fa-backward"></i></div>
+<div><i onclick="playPause()" class="play-icon fa-solid fa-play"></i></div>
+<div><i class="front-icon fa-solid fa-forward"></i></div>
+
+</div>
+</div>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
